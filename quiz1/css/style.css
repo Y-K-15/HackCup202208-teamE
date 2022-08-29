@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 3px solid black;
+}
+.header-inner {
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+h1 {
+  font-family: cursive;
+  font-style: oblique;
+}
+/*ハンバーガーメニュー*/
+nav {
+  position: fixed;
+  top: 0;
+  right: -1400px;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  background: #fff;
+  font-size: 16px;
+
+  box-sizing: border-box;
+  /* z-index: 2; */
+}
+
+nav ul li {
+  padding: 20px 28px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #111;
+}
+
+.menu {
+  text-align: center;
+}
+.window {
+  width: 30px;
+  height: 24px;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  background-color: unset;
+  border: none;
+  top: 50%;
+  padding-top: 10px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 300px;
+}
+
+.window span {
+  /* position: absolute; */
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: #666;
+  border-radius: 10px;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  z-index: 9999;
+}
+
+.window span:nth-child(1) {
+  top: 0;
+}
+
+.window span:nth-child(2) {
+  top: 5px;
+}
+
+.window span:nth-child(3) {
+  top: 10px;
+}
+.quiz {
+  margin-top: 130px;
+}
+#quiz-image {
+  height: 300px;
+  width: 300px;
+  object-fit: contain;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,22 +1,22 @@
 //ハンバーガーメニュー
-// $(function () {
-//   $(".window").on("click", function () {
-//     let rightVal = 0;
-//     if ($(this).hasClass("open")) {
-//       rightVal = -1400;
+$(function () {
+  $(".window").on("click", function () {
+    let rightVal = 0;
+    if ($(this).hasClass("open")) {
+      rightVal = -1400;
 
-//       $(this).removeClass("open");
-//     } else {
-//       $(this).addClass("open");
-//     }
-//     $("#navi-inner").stop().animate(
-//       {
-//         right: rightVal,
-//       },
-//       500
-//     );
-//   });
-// });
+      $(this).removeClass("open");
+    } else {
+      $(this).addClass("open");
+    }
+    $("#navi-inner").stop().animate(
+      {
+        right: rightVal,
+      },
+      500
+    );
+  });
+});
 const quizText = document.getElementById("quiz-text");
 const quizImage = document.getElementById("quiz-image");
 const choice1 = document.getElementById("choice-1");

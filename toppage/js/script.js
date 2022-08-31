@@ -3,7 +3,7 @@ $(function () {
   $(".window").on("click", function () {
     let rightVal = 0;
     if ($(this).hasClass("open")) {
-      rightVal = -1100;
+      rightVal = -1700;
 
       $(this).removeClass("open");
     } else {
@@ -21,7 +21,7 @@ $(function () {
 // スライドショーの画像
 let imgList = [
   "../images/img01.jpg",
-  "../images/img02.jpg",
+  "../images/img14.jpg",
   "../images/img03.jpg",
   "../images/img04.jpg",
 ];

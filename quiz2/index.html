@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Quiz2</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <h1>teamE</h1>
+        <button class="window">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <nav id="navi-inner">
+      <ul class="menu">
+        <li><a href="../toppage/index.html">🍣チーム紹介🍣</a></li>
+        <li><a href="../quiz1/index.html">🎮ゲーム🎮</a></li>
+        <li><a href="./">🎮ゲーム2🎮</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="container">
+        <p id="title">タイピングゲーム</p>
+        <div id="start-window">
+          <button id="start-button">スタート</button>
+          <p>エンターキーをおしてスタート！</p>
+        </div>
+
+        <div id="mondai-window" style="display: none">
+          <h1 id="mondai-display"></h1>
+          <input type="text" id="input" />
+          <p id="time-display"></p>
+        </div>
+
+        <div id="result-window" style="display: none">
+          <h1>終了！</h1>
+          <h2 id="result-display"></h2>
+          <button id="reset-button">もういちど</button>
+        </div>
+      </div>
+    </main>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
